@@ -13,8 +13,8 @@ def generate_data():
 
     rng = np.random.RandomState(2)
     
-    X_train += 4 * rng.uniform(size=X_train.shape)
-    X_test += 4 * rng.uniform(size=X_test.shape)
+    X_train += 2 * rng.uniform(size=X_train.shape)
+    X_test += 2 * rng.uniform(size=X_test.shape)
 
     linearly_separable_train = (X_train, y_train)
     linearly_separable_test = (X_test, y_test)
